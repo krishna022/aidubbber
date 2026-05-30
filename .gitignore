@@ -1,0 +1,51 @@
+# Virtual environment
+.venv/
+
+# Processing temp files (can be large — GBs of WAV segments)
+.temp/
+
+# Downloaded model weights (re-downloaded automatically)
+models/spkrec-ecapa/
+
+# User input videos
+input/
+
+# Dubbed output videos
+output/
+
+# Logs
+*.log
+dubd.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Audio / video files
+*.wav
+*.mp3
+*.mp4
+*.mkv
+*.mov
+*.srt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

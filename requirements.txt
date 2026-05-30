@@ -1,0 +1,30 @@
+# ── Core ML / Apple Silicon ────────────────────────────────────────────────
+mlx>=0.16.0
+mlx-whisper>=0.4.0            # MLX-native Whisper (Apple Silicon)
+
+# ── Speaker Diarization (token-free, no account needed) ────────────────────
+speechbrain>=1.0.0             # ECAPA-TDNN speaker embeddings
+scikit-learn>=1.4.0            # AgglomerativeClustering for speaker grouping
+# Silero VAD is loaded via torch.hub (auto-cached, no install needed)
+
+# ── Speech / Audio ─────────────────────────────────────────────────────────
+TTS>=0.22.0                    # Coqui XTTS v2 (multi-speaker voice cloning)
+soundfile>=0.12.1
+librosa>=0.10.2
+audioread>=3.0.1
+
+# ── Translation ────────────────────────────────────────────────────────────
+transformers==4.45.2          # pinned: 4.46+ removes BeamSearchScorer used by Coqui TTS 0.22.0
+sentencepiece>=0.2.0           # NLLB tokeniser dependency
+sacremoses>=0.1.1
+
+# ── PyTorch (MPS backend on macOS) ─────────────────────────────────────────
+torch>=2.3.0
+torchaudio>=2.3.0
+torchvision>=0.18.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+numpy>=1.26.0
+tqdm>=4.66.0
+huggingface_hub>=0.23.0        # model downloads (no auth required for public models)
+accelerate>=0.30.0
